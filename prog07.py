@@ -3,13 +3,7 @@
 nums = []
 
 for i in range(10):
-    while True:
-        try:
-            num = float(input(f"Enter number {i+1}: "))
-            nums.append (num)
-            break
-        except ValueError:
-            print("Please enter a valid number.")
-            continue
+    num = float(input(f"Enter number {i+1}: "))
+    nums.append (num)
 
 print(f"Sum: {sum(nums)}")
